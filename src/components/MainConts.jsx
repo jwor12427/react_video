@@ -8,7 +8,8 @@ const MainConts = () => {
 
   useEffect(() => {
     fetchAPI(`search?part=snippet&q=BLACKPINK`).then((data) =>
-      console.log(data)
+      // console.log(data)
+      setVideos(data)
     )
   }, [])
 
