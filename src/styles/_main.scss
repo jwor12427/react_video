@@ -1,0 +1,52 @@
+#main {
+  display: flex;
+  margin-top: 65px;
+  #aside {
+    width: 20%;
+    min-height: 100vh;
+    border-right: 1px solid var(--bg-dark-border);
+    padding: 30px;
+    button {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 5px;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      padding: 8px;
+      border-radius: 12px;
+      :first-child {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: -1px;
+      }
+      &:hover {
+        background-color: #e94560;
+      }
+    }
+  }
+  #contents {
+    width: 80%;
+    padding: 30px;
+
+    h2 {
+      margin-bottom: 10px;
+      em {
+        color: #e94560;
+      }
+    }
+  }
+}
+
+.videos__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  > div {
+    width: 24%;
+    height: 400px;
+    background: #e94560;
+    margin-bottom: 20px;
+  }
+}
