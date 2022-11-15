@@ -26,3 +26,7 @@ npm i node-sass (설치 안될 시) --> npm i sass
 
 npm install react-icons --save
 https://react-icons.github.io/react-icons
+
+## react 사이트 gogo!
+
+https://react-video.netlify.app
