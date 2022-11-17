@@ -1,38 +1,15 @@
 import React from 'react'
 
-const Videos = () => {
+import { VideoCard, Loader } from './'
+
+const Videos = ({ videos }) => {
+  if (!videos?.length) return <Loader /> //갯수가 없을때 로딩 출력, 에러 뜨지 않게 하기 위해 ?붙임
+
   return (
     <article className="videos__inner">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      {videos.map((item, idx) => (
+        <VideoCard video={item} key={idx} />
+      ))}
     </article>
   )
 }

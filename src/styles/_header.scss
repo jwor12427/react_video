@@ -1,5 +1,5 @@
 #header {
-  border-bottom: 1px solid var(--bg-dark-border);
+  border-bottom: 1px solid #e94560;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -8,10 +8,10 @@
   top: 0;
   width: 100%;
   background: #000;
+  z-index: 10;
   .logo {
     width: 20%;
     text-align: center;
-    border-right: 1px solid var(--bg-dark-border);
     font-size: 20px;
 
     .icon {
@@ -25,6 +25,7 @@
     width: 80%;
     padding: 10px 30px;
     position: relative;
+    border-left: 1px solid #e94560;
     .glass {
       position: absolute;
       left: 43px;
