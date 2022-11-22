@@ -26,7 +26,7 @@ const MainConts = () => {
           <FaCat className="icon2" />
           <em>{selectCategory}</em> 페이지
         </h2>
-        <Videos videos={videos} />
+        <Videos videos={videos} layout="mainColumn" />
       </section>
     </main>
   )

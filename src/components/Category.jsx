@@ -13,8 +13,8 @@ const Category = ({ selectCategory, setSelectCategory }) => {
           key={category.name}
           onClick={() => setSelectCategory(category.name)}
         >
-          <span>{category.icon}</span>
-          <span>{category.name}</span>
+          <span className="cate__icon">{category.icon}</span>
+          <span className="cate__name">{category.name}</span>
         </button>
       ))}
     </div>
