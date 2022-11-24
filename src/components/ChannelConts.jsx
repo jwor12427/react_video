@@ -11,7 +11,7 @@ const ChannelConts = () => {
   const [channelDetail, setChannelDetail] = useState()
   const [videos, setVideos] = useState(null)
   const { id } = useParams()
-  console.log(channelDetail)
+  // console.log(channelDetail)
 
   useEffect(() => {
     const fetchResults = async () => {

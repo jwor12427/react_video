@@ -16,7 +16,7 @@ const VideoCard = ({
         <span className="videoTitle">{snippet?.title}</span>
       </Link>
       <Link to={`/channel/${snippet.channelId}`}>
-        <span className="channelName">{snippet.channelTitle}</span>
+        <span className="channelName">{snippet?.channelTitle}</span>
       </Link>
     </div>
   )

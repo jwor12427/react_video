@@ -1,6 +1,11 @@
 #main {
   display: flex;
   margin-top: 65px;
+  &.search {
+    #contents {
+      width: 100%;
+    }
+  }
   #aside {
     width: 20%;
     min-height: 100vh;
@@ -113,14 +118,16 @@
       height: 200px;
       margin-top: 30px;
       background-color: #2b2b2bc2;
-      padding: 10px 20px;
+      padding: 15px 20px;
+      margin-bottom: 30px;
+      border-radius: 5px;
       .video__flex {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         .video__title {
           width: 60%;
-          font-size: 26px;
+          font-size: 22px;
           font-weight: 700;
           margin-bottom: 10px;
         }
@@ -184,20 +191,21 @@
     text-align: center;
     height: 220px;
     .channel-name {
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 800;
       color: #e94560;
+      margin-bottom: 5px;
     }
     .channel-desc {
       line-height: 1.6;
       word-break: keep-all;
-      font-size: 18px;
+      font-size: 16px;
       // text-align: left;
       margin: 0 40px;
     }
     .channel-go {
       display: block;
-      margin-top: 5px;
+      margin-top: 7px;
       &:hover {
         color: #e94560;
       }
@@ -230,7 +238,7 @@
   #main {
     #aside {
       button {
-        padding: 4px;
+        padding: 4px 10px;
         word-break: keep-all;
       }
     }
@@ -238,6 +246,22 @@
 }
 
 @media (max-width: 1000px) {
+  #main {
+    #aside {
+      width: 20%;
+      // border-right: none;
+    }
+    #contents {
+      width: 80%;
+      .videos__inner {
+        &.mainColumn {
+          .box {
+            width: 47%;
+          }
+        }
+      }
+    }
+  }
   .videoConts {
     .videoLeft {
       .video__desc {
@@ -303,6 +327,11 @@
             width: 100%;
           }
         }
+        &.searchColumn {
+          .box {
+            width: 48%;
+          }
+        }
       }
     }
   }
@@ -332,6 +361,20 @@
         &.column2 {
           .box {
             width: 45%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  #main {
+    #contents {
+      .videos__inner {
+        &.searchColumn {
+          flex-direction: column;
+          .box {
+            width: 100%;
           }
         }
       }
